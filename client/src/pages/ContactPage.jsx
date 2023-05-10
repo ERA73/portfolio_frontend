@@ -1,6 +1,7 @@
 import {useForm} from 'react-hook-form'
 import { sendContact } from '../api/contact.api'
 import { useNavigate } from 'react-router-dom'
+import '../styles/contact.css'
 
 export function ContactPage() {
     const {register, handleSubmit, formState:{errors}} = useForm()
