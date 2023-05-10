@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { FcBriefcase } from 'react-icons/fc';
 import { BsBriefcaseFill } from 'react-icons/bs';
@@ -15,16 +15,16 @@ export function Navigation() {
     }
     return (
         <div className="container">
-            <Link to="/" onClick={hideNavbar}>
+            <NavLink to="/" onClick={hideNavbar}>
                 <FcBriefcase size={40} style={{backgroundColor:"#ccc", borderRadius:15, padding:5}}/>
-            </Link>
+            </NavLink>
             <nav ref={navRef}>
-                <Link to="/" onClick={hideNavbar}>About</Link>
-                <Link to="/about" onClick={hideNavbar}>About</Link>
-                <Link to="/skills" onClick={hideNavbar}>Skills</Link>
-                <Link to="/experience" onClick={hideNavbar}>Experience</Link>
-                <Link to="/contact" onClick={hideNavbar}>Contact</Link>
-                <Link to="/contactlist" onClick={hideNavbar}>Contact List</Link>
+                <NavLink to="/" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Home</NavLink>
+                <NavLink to="/about" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>About</NavLink>
+                <NavLink to="/skills" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Skills</NavLink>
+                <NavLink to="/experience" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Experience</NavLink>
+                <NavLink to="/contact" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact</NavLink>
+                <NavLink to="/contactlist" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact List</NavLink>
                 <button className="nav-btn nav-btn-close" onClick={showNavbar}><FaTimes/></button>
             </nav>
             <button className="nav-btn nav-btn-bars" onClick={showNavbar}><FaBars/></button>

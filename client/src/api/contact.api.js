@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const contactApi = axios.create({
-    baseURL: 'http://localhost/contact/api/v1/contact/'
+    baseURL: 'http://localhost:8000/contact/api/v1/contact/'
 })
 
 // export const getAllContacts = () => {
