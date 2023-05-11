@@ -8,17 +8,21 @@ export function SkillsPage() {
   return (
     <div className='container skill'>
       <div className='skill-hard'>
-        <p>Soft Hard</p>
+        <p>Hard Skills</p>
         <div className='skill-hard-list'>
-          <AiOutlineHtml5/>
-          <TbBrandJavascript/>
-          <TbBrandCss3/>
-          <FaReact/>
-          <TbBrandDjango/>
-          <AiOutlineConsoleSql/>
-          <FaLinux/>
-          <FaPython/>
-          <TbBrandDocker/>
+          <div>
+            <AiOutlineHtml5/>
+            <TbBrandJavascript/>
+            <TbBrandCss3/>
+            <FaReact/>
+          </div>
+          <div>
+            <TbBrandDjango/>
+            <AiOutlineConsoleSql/>
+            <FaLinux/>
+            <FaPython/>
+            <TbBrandDocker/>
+          </div>
         </div>
       </div>
       <div className='skill-soft'>
