@@ -9,6 +9,7 @@
   --secondaryColor:rgb(48, 48, 48);
   --tertiaryColor:rgb(48, 48, 48);
   --emphasisColor:lightsteelblue;
+  --titleColor:lightsteelblue;
   --textColor:white;
   --gradient1:rgba(20, 20, 20, 0);
   --gradient2:rgba(20, 20, 20, 0.5);
@@ -18,16 +19,23 @@
 body{
   background-color: var(--primaryColor);
   color: var(--textColor);
-  height: 95vh;
-  min-height: 90vh;
+  height: 100vh;
   width: 100vw;
 }
 
+.container{
+  padding-top: 80px;
+}
+
 footer{
-  position: fixed;
+  display: flex;
+  position: relative;
+  align-self: end;
+  bottom: 0;
   height: 50px;
   width: 100vw;
   background-color: var(--tertiaryColor);
-  color: var(--textColor);;
-  bottom: 0;
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
 }

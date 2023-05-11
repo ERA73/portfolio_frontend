@@ -5,6 +5,7 @@ import { FcBriefcase } from 'react-icons/fc';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import '../styles/navbar.css'
 
+
 export function Navigation() {
     const navRef = useRef();
     const showNavbar =()=>{
@@ -13,6 +14,7 @@ export function Navigation() {
     const hideNavbar =()=>{
         navRef.current.classList.remove("responsive");
     }
+    
     return (
         <div className="nav-container">
             <NavLink to="/" onClick={hideNavbar}>

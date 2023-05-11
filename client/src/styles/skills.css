@@ -1,0 +1,49 @@
+.skill{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.skill-hard{
+    height: 50%;
+    width: 100vw;
+    display: inline-block;
+}
+.skill-soft{
+    height: 50%;
+    width: 100vw;
+    display: inline-block;
+}
+.skill-hard p{
+    color: var(--titleColor);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    position: absolute;
+}
+.skill-soft p{
+    color: var(--titleColor);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    position: absolute;
+}
+.skill-hard-list{
+    height: 100%;
+    display: flex;
+}
+.skill-soft-list{
+    height: 100%;
+    display: flex;
+}
+
+.skill-hard-list svg{
+    padding: 10px;
+    height: auto;
+    width: 12vw;
+    flex-wrap: wrap;
+}

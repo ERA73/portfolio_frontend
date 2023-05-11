@@ -1,5 +1,6 @@
 .about-wrapper{
-    height: 90vh;
+    height: 100vh;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
@@ -12,13 +13,13 @@
     overflow: hidden;
 }
 .about-picture img{
-    height: 90vh;
+    height: 100vh;
     width: auto;
     margin-left: 50%;
     transform: translateX(-50%);
 }
 .about-content{
-    height: 90vh;
+    height: 100vh;
     grid-column: 4 / span 5;
     grid-row: 1 / span 5;
     padding: 0px 15px 0px 0px;
@@ -31,7 +32,8 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    font-size: 1.54rem;
+    font-size: 1.4rem;
+    color: var(--titleColor);
 }
 .about-profession{
     padding-top: 5%;
@@ -40,7 +42,7 @@
     align-items: start;
     justify-content: center;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .about-hobby{
     padding-top: 5%;
@@ -49,14 +51,12 @@
     align-items: start;
     justify-content: center;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 50px;
 }
 
 @media screen and (max-aspect-ratio: 4 / 6) {
     .about-wrapper{
-        height: 90vh;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(50px, auto);
@@ -74,7 +74,6 @@
     .about-content{
         grid-column: 1;
         grid-row: 1;
-        height: 100%;
         padding: 15px;
         background-color: var(--gradient2);
     }
