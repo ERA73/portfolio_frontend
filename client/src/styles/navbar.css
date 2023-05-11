@@ -1,4 +1,4 @@
-.container{
+.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +20,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.container .nav-btn{
+.nav-container .nav-btn{
     padding: 2px;
     cursor: pointer;
     background: transparent;
@@ -33,16 +33,11 @@ nav a:hover{
     display: flex;
 }
 
-.container div, nav{
+.nav-container div, nav{
     display: flex;
     align-items: center;
 }
-/* 
-.link {
-    color: white;
-} */
 
-/* Specific styles for active links */
 .link-active {
     text-decoration: underline;
     font-weight: 700;
@@ -50,12 +45,12 @@ nav a:hover{
 }
 
 @media screen and (max-aspect-ratio: 4 / 6) , screen and (max-width:650px)  {
-    .container .nav-btn{
+    .nav-container .nav-btn{
         visibility: visible;
         opacity: 1;
     }
 
-    .container nav{
+    .nav-container nav{
         position: fixed;
         top: 0;
         left: 0;
@@ -71,7 +66,7 @@ nav a:hover{
         transform: translateX(100vw);
     }
 
-    .container .responsive{
+    .nav-container .responsive{
         transform: none;
     }
 

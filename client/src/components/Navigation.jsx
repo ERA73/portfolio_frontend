@@ -14,7 +14,7 @@ export function Navigation() {
         navRef.current.classList.remove("responsive");
     }
     return (
-        <div className="container">
+        <div className="nav-container">
             <NavLink to="/" onClick={hideNavbar}>
                 <FcBriefcase size={40} style={{backgroundColor:"#ccc", borderRadius:15, padding:5}}/>
             </NavLink>

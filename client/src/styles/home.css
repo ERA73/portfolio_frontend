@@ -1,5 +1,5 @@
 
-.wrapper{
+.home-wrapper{
     height: 88vh;
     padding-bottom: 50px;
     display: grid;
@@ -7,25 +7,25 @@
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-.top{
+.home-top{
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     padding: 0px 10px;
     font-weight: 50;
     font-family: math;
 }
-.top h2{
+.home-top h2{
     font-size: 10vw;
     padding: 0px 10px;
 }
-.top h5{
+.home-top h5{
     height: 5vh;
     padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.picture {
+.home-picture {
     grid-column: 4 / span 4;
     grid-row: 1 / span 4;
     border-radius: 30%;
@@ -34,27 +34,27 @@
     padding: 10px;
     max-height: 70vh;
 }
-.bottom{
+.home-bottom{
     grid-column: 1 / span 4;
     grid-row: 5;
     padding: 0px 10px;
     font-weight: 50;
     font-family: math;
 }
-.bottom h5{
+.home-bottom h5{
     font-size: 1.7vw;
 }
-.bottom .links a svg{
+.home-bottom .home-links a svg{
     height: auto;
     width: 6vw;
     padding: 0px 5px;
 }
-.bottom .links a{
+.home-bottom .home-links a{
     text-decoration: none;
     color: var(--textColor);
 }
 
-.circle img {
+.home-circle img {
     height: auto;
     width: 100%;
     border-radius: 10%;
@@ -64,7 +64,7 @@
     right: 0;
 }
 
-.circle:after {
+.home-circle:after {
     content: "";
     /* display: inline-block; */
     width: 100%;
@@ -74,31 +74,32 @@
     /* background: radial-gradient(closest-side at center, var(--gradient1) 70%, var(--gradient2) 95%,var(--gradient3) 100%); */
     border-radius: 10%;
     right: 0;
+    overflow: hidden;
 }
 
 @media screen and (max-aspect-ratio: 4 / 6) {
-    .wrapper{
+    .home-wrapper{
         display: block;
     }
-    .top{
+    .home-top{
         display: block;
     }
-    .top h2{
+    .home-top h2{
         display: inline-block;
     }
-    .top h5{
+    .home-top h5{
         font-size: 3vw;
     }
-    .picture {
+    .home-picture {
         display: block;
     }
-    .bottom{
+    .home-bottom{
         display: block;
     }
-    .bottom h5{
+    .home-bottom h5{
         font-size: 3vw;
     }
-    .bottom .links svg{
+    .home-bottom .home-links svg{
         height: auto;
         width: 12vw;
         padding: 0px 5px;

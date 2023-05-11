@@ -1,0 +1,101 @@
+.about-wrapper{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+.about-picture{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
+    align-self: start;
+    overflow: hidden;
+}
+.about-picture img{
+    height: 90vh;
+    width: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.about-content{
+    height: 90vh;
+    grid-column: 4 / span 5;
+    grid-row: 1 / span 5;
+    padding: 0px 15px 0px 0px;
+    background-color: var(--gradient2);
+}
+.about-title{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.54rem;
+}
+.about-profession{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+.about-hobby{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.4rem;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-aspect-ratio: 4 / 6) {
+    .about-wrapper{
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(50px, auto);
+    }
+    .about-picture{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
+        overflow: hidden;
+    }
+    .about-picture img{
+        margin-left: 0;
+        transform: none;
+    }
+    .about-content{
+        grid-column: 1;
+        grid-row: 1;
+        height: 100%;
+        padding: 15px;
+        background-color: var(--gradient2);
+    }
+    .about-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+    .about-profession{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        text-align: justify;
+    }
+    .about-hobby{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        text-align: justify;
+        padding-bottom: 50px;
+    }
+    
+}
