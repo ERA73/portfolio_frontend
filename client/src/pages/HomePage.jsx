@@ -4,7 +4,7 @@ import { SiGmail } from 'react-icons/si';
 
 export function HomePage() {
   return (
-    <div className="home-wrapper container">
+    <div className="home-wrapper">
       <div className="home-top">
         <h5>PORTFOLIO</h5>
         <h2>ESTEBAN</h2>

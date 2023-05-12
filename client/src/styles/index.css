@@ -24,7 +24,9 @@ body{
 }
 
 .container{
-  padding-top: 80px;
+  padding-top: 10vh;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 footer{

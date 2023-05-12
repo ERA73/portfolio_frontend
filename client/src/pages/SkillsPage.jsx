@@ -6,9 +6,9 @@ import { FaLinux, FaPython, FaReact } from 'react-icons/fa';
 
 export function SkillsPage() {
   return (
-    <div className='container skill'>
+    <div className='skill-container'>
       <div className='skill-hard'>
-        <p>Hard Skills</p>
+        <p className='title'>Hard Skills</p>
         <div className='skill-hard-list'>
           <div>
             <AiOutlineHtml5/>
@@ -26,8 +26,34 @@ export function SkillsPage() {
         </div>
       </div>
       <div className='skill-soft'>
-        <p>Soft Skills</p>
-        <div className='skill-soft-list'></div>
+        <p className='title'>Soft Skills</p>
+        <div className='skill-soft-list'>
+          <div>
+            <span>
+            <img src="src/img/icons/talk_box_01.svg"/><p>comunication</p>
+            </span>
+            <span>
+            <img src="src/img/icons/medal_01.svg"/><p>service</p>
+            </span>
+            <span>
+            <img src="src/img/icons/shake_hands_02.svg"/><p>support</p>
+            </span>
+          </div>
+          <div>
+            <span>
+            <img src="src/img/icons/team_01.svg"/><p>teamwork</p>
+            </span>
+            <span>
+            <img src="src/img/icons/lead_06.svg"/><p>leadership</p>
+            </span>
+            <span>
+            <img src="src/img/icons/oratory_05.svg"/><p>oratory</p>
+            </span>
+            <span>
+            <img src="src/img/icons/mentoring_09.svg"/><p>mentoring</p>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ export function ContactPage() {
             console.log(res)
         }
     })
-    return <div>
+    return <div className='contact-container'>
         <form onSubmit={onSubmit}>
             <input type="text" placeholder="Name" {...register("name", {required:true})}/>
             {errors.name && <span className='error'>Name is required</span>}

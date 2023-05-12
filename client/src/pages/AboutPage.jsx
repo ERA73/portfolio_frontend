@@ -2,7 +2,7 @@ import '../styles/about.css'
 
 export function AboutPage() {
   return (
-    <div className='container'>
+    <div className='about-container'>
       <div className="about-wrapper">
         <div className="about-picture">
           <img src='src/img/me.jpg'></img>

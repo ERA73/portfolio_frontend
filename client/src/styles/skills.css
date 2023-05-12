@@ -1,58 +1,202 @@
-.skill{
-    height: 100vh;
+.skill-container{
+    height: 90vh;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
+    flex-direction: row;
 }
 .skill-hard{
-    height: 50%;
-    width: 100vw;
+    width: 50%;
+    height: 100%;
     display: inline-block;
+    background-color: dimgray;
 }
 .skill-soft{
-    height: 50%;
-    width: 100vw;
+    width: 50%;
+    height: 100%;
     display: inline-block;
+    background-color: gray;
 }
-.skill-hard p{
+.skill-hard .title{
+    position: relative;
     color: var(--titleColor);
     width: 100%;
+    height: 10%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.3rem;
-    position: relative;
 }
-.skill-soft p{
+.skill-soft .title{
+    position: relative;
     color: var(--titleColor);
     width: 100%;
+    height: 10%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.3rem;
-    position: relative;
 }
 .skill-hard-list{
     position: relative;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
 .skill-soft-list{
-    height: 100%;
+    position: relative;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-hard-list div{
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 10px;
-    height: auto;
+    height: 35%;
 }
 
-.skill-hard-list div svg{
-    padding: 5px;
+.skill-soft-list div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 35%;
+    align-items: center;
+}
+
+.skill-hard-list svg{
+    padding: 0px 10px;
     height: auto;
-    width: 12vh;
-    flex-wrap: wrap;
-    display: inline-block;
+    width: 15vw;
+}
+.skill-soft-list span{
+    padding: 0px 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-soft-list div span p{
+    height: 20%;
+    color: var(--titleColor);
+    text-align: center;
+    font-size: 2vw;
+    overflow: hidden;
+}
+.skill-soft-list div span img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 15vw;
+    overflow: hidden;
+}
+
+@media screen and (max-aspect-ratio: 5 / 6) {
+    .skill-container{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        /* padding-bottom: 50px; */
+    }
+    .skill-hard{
+        height: 50%;
+        width: 100vw;
+        display: inline-block;
+    }
+    .skill-soft{
+        height: 50%;
+        width: 100vw;
+        display: inline-block;
+    }
+    .skill-hard .title{
+        position: relative;
+        color: var(--titleColor);
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+    }
+    .skill-soft .title{
+        position: relative;
+        color: var(--titleColor);
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+    }
+    .skill-hard-list{
+        position: relative;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-soft-list{
+        position: relative;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .skill-hard-list div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .skill-soft-list div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .skill-hard-list svg{
+        padding: 5px;
+        height: auto;
+        width: 12vh;
+    }
+    .skill-soft-list span{
+        padding: 5px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-soft-list div span p{
+        height: 20%;
+        color: var(--titleColor);
+        text-align: center;
+        font-size: 3vw;
+        overflow: hidden;
+    }
+    .skill-soft-list div span img{
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: 12vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-aspect-ratio: 12 / 9) {
+    .skill-soft-list div span p{
+        font-size: 3vh;
+        height: 4vh;
+    }
+    .skill-hard-list div{
+        height: 45%;
+    }
+    
+    .skill-soft-list div{
+        height: 45%;
+    }
+    
 }
