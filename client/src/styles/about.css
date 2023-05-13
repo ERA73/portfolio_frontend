@@ -30,6 +30,9 @@
     background-color: var(--gradient2);
     overflow: scroll;
 }
+.about-content::-webkit-scrollbar{
+    display: none;
+}
 .about-title{
     padding-top: 5%;
     width: 100%;

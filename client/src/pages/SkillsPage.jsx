@@ -1,7 +1,7 @@
 import '../styles/skills.css'
 import { TbBrandCss3, TbBrandDjango, TbBrandJavascript, TbBrandDocker } from 'react-icons/tb';
 import { AiOutlineHtml5, AiOutlineConsoleSql } from 'react-icons/ai';
-import { FaLinux, FaPython, FaReact } from 'react-icons/fa';
+import { FaUbuntu, FaPython, FaReact } from 'react-icons/fa';
 
 
 export function SkillsPage() {
@@ -19,7 +19,7 @@ export function SkillsPage() {
           <div>
             <TbBrandDjango/>
             <AiOutlineConsoleSql/>
-            <FaLinux/>
+            <FaUbuntu/>
             <FaPython/>
             <TbBrandDocker/>
           </div>

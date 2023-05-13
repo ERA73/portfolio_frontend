@@ -14,9 +14,9 @@ const contactApi = axios.create({
 export const getAllContacts = () =>  contactApi.get('/');
 
 export const sendContact = (contact) => contactApi.post('/', contact)
-    .then((response) => {
+    .then(response => {
         return {data:response, status:true, code:response.status}
     })
-    .catch((error) => {
+    .catch(error => {
         return {data:error, status:false, code:error.response.status}
     });
