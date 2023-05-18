@@ -25,8 +25,8 @@ export function Navigation() {
                 <NavLink to="/about" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>About</NavLink>
                 <NavLink to="/skills" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Skills</NavLink>
                 <NavLink to="/experience" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Experience</NavLink>
-                <NavLink to="/contact" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact</NavLink>
-                <NavLink to="/contactlist" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact List</NavLink>
+                {/* <NavLink to="/contact" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact</NavLink>
+                <NavLink to="/contactlist" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact List</NavLink> */}
                 <button className="nav-btn nav-btn-close" onClick={showNavbar}><FaTimes/></button>
             </nav>
             <button className="nav-btn nav-btn-bars" onClick={showNavbar}><FaBars/></button>

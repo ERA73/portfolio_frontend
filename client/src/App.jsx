@@ -29,9 +29,9 @@ function App() {
             <Route path='/about' element={<AboutPage />} />
             <Route path='/skills' element={<SkillsPage />} />
             <Route path='/experience' element={<ExperiencePage />} />
-            {/* <Route path='/projects' element={<ContactPage/>}/> */}
+            {/* <Route path='/projects' element={<ContactPage/>}/>
             <Route path='/contact' element={<ContactPage />} />
-            <Route path='/contactlist' element={<ContactListPage />} />
+            <Route path='/contactlist' element={<ContactListPage />} /> */}
           </Routes>
         </div>
       </BrowserRouter>
