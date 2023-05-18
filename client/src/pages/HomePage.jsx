@@ -12,7 +12,7 @@ export function HomePage() {
       </div>
       <div className="home-picture">
         <div className="home-circle">
-          <img src='src/img/laptop.jpg'></img>
+          <img src='img/laptop.jpg'></img>
         </div>
       </div>
       <div className="home-bottom">

@@ -5,7 +5,7 @@ export function AboutPage() {
     <div className='about-container'>
       <div className="about-wrapper">
         <div className="about-picture">
-          <img src='src/img/me.jpg'></img>
+          <img src='img/me.jpg'></img>
         </div>
         <div className="about-content">
           <p className="about-title">
