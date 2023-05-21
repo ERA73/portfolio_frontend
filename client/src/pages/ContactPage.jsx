@@ -12,7 +12,7 @@ export function ContactPage() {
 
     const onSubmit = handleSubmit(async data => {
         const res = await sendContact(data)
-        console.log(data)
+        // console.log(res)
         if (res.status) {
             // navigate('/contactlist')
             reset({
@@ -20,7 +20,7 @@ export function ContactPage() {
                 email: "",
                 message: ""
             });
-            setStatus({ type: 'success', data: "Sent Successfully" });
+            setStatus({ type: 'success', data: res.data.message });
         } else {
             setStatus({ type: 'error', data: res.data.message });
         }

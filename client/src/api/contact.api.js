@@ -15,8 +15,9 @@ export const getAllContacts = () =>  contactApi.get('/');
 
 export const sendContact = (contact) => contactApi.post('/', contact)
     .then(response => {
-        return {data:response, status:true, code:response.status}
+        console.log(response)
+        return {data:response.data, status:true, code:response.status}
     })
     .catch(error => {
-        return {data:error, status:false, code:error.response.status}
+        return {data:error.response.data, status:false, code:error.response.status}
     });
