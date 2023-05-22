@@ -2,8 +2,8 @@ import axios from 'axios'
 
 const contactApi = axios.create({
     // baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/'
-    // baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/',
-    baseURL: 'https://portfolio.codedevest.com:8000/contact/api/v1/contact/',
+    baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/',
+    // baseURL: 'https://portfolio.codedevest.com:8000/contact/api/v1/contact/',
     // buttom sections
     headers: {
         'Accept': 'application/json',
