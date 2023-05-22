@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding: 0px 20px;
 }
 .contact-container h2{
     max-width: 100%;
@@ -19,21 +20,51 @@
     text-align: center;
     padding-bottom: 20px;
 }
-.contact-form{
-    max-height: 20rem;
-    max-width: 20rem;
+.heading-main{
+    color: var(--titleColor);
+    font-size: 2rem;
+    display: block;
+}
+.heading-sec{
+    color: white;
+    font-size: 1rem;
+    display: block;
+}
+.contact-content{
+    max-height: 25rem;
+    max-width: 25rem;
     height: 100%;
     width: 100%;
     border-radius: 5px;
     background-color: var(--secondaryColor);
-    padding: 5px;
+    padding: 20px;
+}
+.contact-form{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1%;
+}
+.contact-field{
+    padding: 5px 0px;
+    width: inherit;
+    height: 20%;
+}
+.contact-field-msg{
+    padding: 5px 0px;
+    width: inherit;
+    min-height: 51%;
+}
+.contact-form label{
+    display: block;
+    padding: 5px 0px;
 }
 .contact-form input{
-    height: 10%;
+    height: fit-content;
+    border: transparent solid 0px;
+    border-radius: 5px;
+    padding: 10px;
     width: 100%;
     display: block;
 }
@@ -47,10 +78,13 @@
 }
 .contact-form textarea{
     width: 100%;
-    height: 65%;
+    height: 80%;
     display: block;
     overflow: scroll;
     resize: none;
+    border: transparent solid 0px;
+    border-radius: 5px;
+    padding: 10px;
 }
 .contact-form textarea::placeholder{
     color: #000;
@@ -61,14 +95,15 @@
 }
 .contact-form button{
     width: 30%;
+    height: 2rem;
     display: block;
-    height: 12%;
     background-color: var(--emphasisColor);
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: none;
     color: var(--primaryColor);
     font-size: 1rem;
     font-weight: 600;
+    align-self: flex-end;
 }
 .contact-container .success{
     color: greenyellow;
