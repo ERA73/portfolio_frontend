@@ -1,7 +1,15 @@
 import axios from 'axios'
 
 const contactApi = axios.create({
-    baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/'
+    // baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/'
+    baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/',
+    // buttom sections
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTF-8'
+      },
+    // top section
+    
 })
 
 // export const getAllContacts = () => {
@@ -10,6 +18,7 @@ const contactApi = axios.create({
 // export const sendContact = (contact) => {
 //     return contactApi.post('/', contact)
 // }
+
 
 export const getAllContacts = () =>  contactApi.get('/');
 
