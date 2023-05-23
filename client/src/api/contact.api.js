@@ -2,14 +2,14 @@ import axios from 'axios'
 
 const contactApi = axios.create({
     // baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/'
-    baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/',
+    baseURL: 'http://portfolio.codedevest.com:8000',
     // baseURL: 'https://portfolio.codedevest.com:8000/contact/api/v1/contact/',
     // buttom sections
     headers: {
-        'Accept': 'application/json',
+        // 'Accept': 'application/json',
         'Content-Type': 'application/json;charset=UTF-8'
       },
-    redirect: 'follow'
+    // redirect: 'follow'
     // top section
     
 })
@@ -22,9 +22,9 @@ const contactApi = axios.create({
 // }
 
 
-export const getAllContacts = () =>  contactApi.get('/');
+export const getAllContacts = () =>  contactApi.get('/contact/api/v1/contact/');
 
-export const sendContact = (contact) => contactApi.post('/', contact)
+export const sendContact = (contact) => contactApi.post('/contact/api/v1/contact/', contact)
     .then(response => {
         console.log(response)
         return {data:response.data, status:true, code:response.status}
