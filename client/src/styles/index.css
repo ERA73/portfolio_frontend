@@ -20,6 +20,16 @@ html {
   font-size: 15px;
 }
 
+label, input, textarea, h1, h2, h3, h4, h5, p, span, a {
+  font-family: 'Ubuntu';
+  /* font-family: "Times New Roman"; */
+  /* font-family: Times; */
+  /* font-family: serif; */
+  /* font-family: Arial; */
+  /* font-family:Helvetica; */
+  /* font-family:sans-serif; */
+}
+
 body{
   background-color: var(--primaryColor);
   color: var(--textColor);
