@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const contactApi = axios.create({
     // baseURL: 'http://127.0.0.1:8000/contact/api/v1/contact/'
-    baseURL: 'https://portfolio.codedevest.com/contact/api/v1/contact/',
+    baseURL: import.meta.env.REACT_APP_API_PORTFOLIO,
     // buttom sections
     headers: {
         // 'Accept': 'application/json',
