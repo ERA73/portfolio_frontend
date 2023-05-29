@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Vite",
+        "type": "pwa-node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/client",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev", "--", "--host"],
+        "port": 5173,
+        "console": "integratedTerminal",
+        "sourceMaps": true,
+        "internalConsoleOptions": "neverOpen",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "resolveSourceMapLocations": [
+          "${workspaceFolder}/client/src/**",
+          "!**/node_modules/**"
+        ]
+      }
+    ]
+  }
+  

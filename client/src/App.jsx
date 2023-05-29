@@ -7,6 +7,7 @@ import { ProjectsPage } from './pages/ProjectsPage'
 import { ContactPage } from './pages/ContactPage'
 import { ContactListPage } from './pages/ContactListPage'
 import { Navigation } from './components/Navigation'
+import { Footer } from './components/Footer'
 
 function App() {
   const hideNavbar = (event) => {
@@ -35,6 +36,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   )
 }

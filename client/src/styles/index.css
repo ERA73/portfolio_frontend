@@ -44,7 +44,7 @@ body{
   padding-top: 10vh;
 }
 
-footer{
+/* footer{
   display: flex;
   position: relative;
   align-self: end;
@@ -55,4 +55,4 @@ footer{
   color: var(--textColor);
   display: flex;
   flex-direction: column;
-}
+} */
