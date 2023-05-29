@@ -41,7 +41,7 @@
     flex-direction: column;
 }
 .home-bottom{
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
     grid-row: 5;
     padding: 0px 10px;
     font-weight: 50;
@@ -114,6 +114,9 @@
     }
     .home-circle img {
         object-fit: contain;
+    }
+    .home-bottom{
+        grid-column: 1 / span 4;
     }
     .home-bottom .home-links a svg{
         height: auto;
