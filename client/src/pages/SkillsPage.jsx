@@ -11,17 +11,17 @@ export function SkillsPage() {
         <p className='title'>Hard Skills</p>
         <div className='skill-hard-list'>
           <div>
-            <AiOutlineHtml5/>
-            <TbBrandJavascript/>
-            <TbBrandCss3/>
-            <FaReact/>
+            <AiOutlineHtml5 title='HTML'/>
+            <TbBrandJavascript title='JavaScript'/>
+            <TbBrandCss3 title='CSS'/>
+            <FaReact  title='React'/>
           </div>
           <div>
-            <TbBrandDjango/>
-            <AiOutlineConsoleSql/>
-            <FaUbuntu/>
-            <FaPython/>
-            <TbBrandDocker/>
+            <TbBrandDjango  title='Django'/>
+            <AiOutlineConsoleSql title='SQL'/>
+            <FaUbuntu title='Ubuntu'/>
+            <FaPython title='Python'/>
+            <TbBrandDocker title='Docker'/>
           </div>
         </div>
       </div>
