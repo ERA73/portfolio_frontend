@@ -28,7 +28,7 @@ export function Navigation() {
 
     return (
         <div className="nav-container" ref={divNavRef}>
-            <Link to="/" smooth={true} duration={scroll_duration} onClick={hideNavbar}>
+            <Link spy={true} offset={-nav_height} to="/" smooth={true} duration={scroll_duration} onClick={hideNavbar}>
                 <FcBriefcase size={40} style={{ backgroundColor: "#ccc", borderRadius: 15, padding: 5 }} />
             </Link>
             <nav ref={navRef}>
