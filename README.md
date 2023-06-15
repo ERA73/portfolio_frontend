@@ -5,7 +5,7 @@ npm i
 ```
 or
 ``` 
-npm i react-router-dom react-hot-toast axios react-hook-form
+npm i react-router-dom react-hot-toast axios react-hook-form react-scroll
 npm i react-icons --save
 ```
 and

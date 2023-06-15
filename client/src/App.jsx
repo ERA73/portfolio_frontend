@@ -8,6 +8,7 @@ import { ContactPage } from './pages/ContactPage'
 import { ContactListPage } from './pages/ContactListPage'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
+import { Element } from 'react-scroll';
 
 function App() {
   const hideNavbar = (event) => {
@@ -24,16 +25,21 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <div className='container'>
-          <Routes>
-            {/* <Route path='/' element={<Navigate to="contact"/>}/> */}
-            <Route path='/' element={<HomePage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/skills' element={<SkillsPage />} />
-            <Route path='/experience' element={<ExperiencePage />} />
-            {/* <Route path='/projects' element={<ContactPage/>}/> */}
-            <Route path='/contact' element={<ContactPage />} />
-            {/* <Route path='/contactlist' element={<ContactListPage />} /> */}
-          </Routes>
+          <Element name='/'>
+            <HomePage />
+          </Element>
+          <Element name='/about'>
+            <AboutPage />
+          </Element>
+          <Element name='/skills'>
+            <SkillsPage />
+          </Element>
+          <Element name='/experience'>
+            <ExperiencePage />
+          </Element>
+          <Element name='/contact'>
+            <ContactPage />
+          </Element>
         </div>
       </BrowserRouter>
       <Footer />
