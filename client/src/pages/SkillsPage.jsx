@@ -9,7 +9,7 @@ export function SkillsPage() {
     <div className='skill-container'>
       <div className='skill-hard'>
         <p className='title'>Hard Skills</p>
-        <div className='skill-hard-list'>
+        <div className='skill-hard-list skill-soft-list'>
           <div>
             <AiOutlineHtml5 title='HTML'/>
             <TbBrandJavascript title='JavaScript'/>
@@ -17,7 +17,9 @@ export function SkillsPage() {
             <FaReact  title='React'/>
           </div>
           <div>
-            <TbBrandDjango  title='Django'/>
+          <span>
+            <img src="img/icons/mage_ai_04.svg" title='Mage-ai'/>
+            </span>
             <AiOutlineConsoleSql title='SQL'/>
             <FaUbuntu title='Ubuntu'/>
             <FaPython title='Python'/>

@@ -51,9 +51,16 @@
     flex-direction: row;
 }
 
-.exp-pictures svg{
+.exp-pictures span{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.exp-pictures span img{
+    width: 100%;
+    height: 100%;
 }
 
 .exp-content p{

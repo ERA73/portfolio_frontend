@@ -1,15 +1,18 @@
 import '../styles/experience.css'
 import { ExperienceCard } from '../components/ExperienceCard'
-import { TbBrandCss3, TbBrandDjango, TbBrandJavascript, TbBrandDocker } from 'react-icons/tb';
+import { TbBrandCss3, TbBrandDjango, TbBrandJavascript, TbBrandDocker, TbBrandSnowflake } from 'react-icons/tb';
 import { AiOutlineHtml5, AiOutlineConsoleSql } from 'react-icons/ai';
-import { FaUbuntu, FaPython, FaReact, FaJava, FaExpeditedssl, FaLock, FaDocker, FaServer } from 'react-icons/fa';
-import { SiFortran, SiCplusplus, SiApache, SiGithubactions, SiOpenssl } from 'react-icons/si';
+import { FaUbuntu, FaPython, FaReact, FaJava, FaExpeditedssl, FaLock, FaDocker, FaServer, FaAws } from 'react-icons/fa';
+import { SiFortran, SiCplusplus, SiApache, SiGithubactions, SiOpenssl, SiPostgresql  } from 'react-icons/si';
 import { SlLink } from 'react-icons/sl';
 import { GrDocker } from 'react-icons/gr';
 import { GoServer } from 'react-icons/go';
 
 export function ExperiencePage() {
   const experiences = [
+    {
+      title:"Data Pipeline Management Platform", img:"img/exp_08.png", icons:[<FaDocker title='Docker'/>,<span><img src="img/icons/mage_ai_04.svg" title='Mage-ai'/></span>,<TbBrandSnowflake title='Snowflake'/>,<SiPostgresql  title='Postgresql'/>,<SiGithubactions title='GitHub Actions'/>,<FaAws title='AWS'/>], description:"System to manage the company's data flows, including persisting data from APIs, validating, and transforming any data source."
+    },
     {
       title:"Personal Website", img:"img/exp_07.png", icons:[<FaReact title='React'/>,<TbBrandDjango title='DJango'/>,<FaUbuntu title='Ubuntu'/>,<AiOutlineConsoleSql title='SQL'/>,<FaExpeditedssl title='SSL'/>,<SiGithubactions title='GitHub Actions'/>], description:"Custom VPS-hosted website with end-to-end configuration, featuring backend and frontend development"
     },
