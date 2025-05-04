@@ -33,12 +33,12 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: |
-          cd en_assistant
+          cd client
           npm ci
 
       - name: Build
         run: |
-          cd en_assistant
+          cd client
           npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './en_assistant/dist'
+          path: './client/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
