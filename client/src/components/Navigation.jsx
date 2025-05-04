@@ -36,7 +36,6 @@ export function Navigation() {
                 <Link activeClass="link-active" spy={true} offset={-nav_height} to="/about" smooth={true} duration={scroll_duration} onClick={hideNavbar} className="link">About</Link>
                 <Link activeClass="link-active" spy={true} offset={-nav_height} to="/skills" smooth={true} duration={scroll_duration} onClick={hideNavbar} className="link">Skills</Link>
                 <Link activeClass="link-active" spy={true} offset={-nav_height} to="/experience" smooth={true} duration={scroll_duration} onClick={hideNavbar} className="link">Experience</Link>
-                <Link activeClass="link-active" spy={true} offset={-nav_height} to="/contact" smooth={true} duration={scroll_duration} onClick={hideNavbar} className="link">Contact</Link>
                 <button className="nav-btn nav-btn-close" onClick={showNavbar}><FaTimes /></button>
             </nav>
             <button className="nav-btn nav-btn-bars" onClick={showNavbar}><FaBars /></button>

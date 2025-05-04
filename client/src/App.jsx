@@ -4,7 +4,6 @@ import { AboutPage } from './pages/AboutPage'
 import { SkillsPage } from './pages/SkillsPage'
 import { ExperiencePage } from './pages/ExperiencePage'
 import { ProjectsPage } from './pages/ProjectsPage'
-import { ContactPage } from './pages/ContactPage'
 import { ContactListPage } from './pages/ContactListPage'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
@@ -36,9 +35,6 @@ function App() {
           </Element>
           <Element name='/experience'>
             <ExperiencePage />
-          </Element>
-          <Element name='/contact'>
-            <ContactPage />
           </Element>
         </div>
       </BrowserRouter>
